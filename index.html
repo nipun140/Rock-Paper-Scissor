@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="./scss/main.css">
+
+</head>
+
+<body>
+  <!-- header  -->
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+    <div class="score-container">
+      <p class="score-text">SCORE</p>
+      <p class="score-value">0</p>
+    </div>
+  </header>
+
+  <!-- triangle layout -->
+
+  <div class="triangle-container">
+    <img src="./images/bg-triangle.svg" alt="img">
+    <div data-target="rock" class="disc-container disc-rock rock-color">
+      <img src="./images/icon-rock.svg" alt="img">
+    </div>
+    <div data-target="scissors" class="disc-container disc-scissors scissors-color">
+      <img src="./images/icon-scissors.svg" alt="img">
+    </div>
+    <div data-target="paper" class="disc-container disc-paper paper-color">
+      <img src="./images/icon-paper.svg" alt="img">
+    </div>
+  </div>
+
+  <!-- game layout  -->
+  <div class="game-container">
+    <div class="game-col game-col-1">
+      <p class="">you picked</p>
+      <div class="game-disc-container user-disc ">
+        <!-- <div class="game-disc rock-color"><img src="./images/icon-rock.svg" alt="img"></div> -->
+      </div>
+    </div>
+    <div class="game-col game-col-2 winner-col">
+      <div class="winner-info-container">
+        <p class="winner-text"></p>
+        <button class="replay-btn">play again</button>
+      </div>
+    </div>
+    <div class="game-col game-col-3">
+      <p>the house picked</p>
+      <div class="game-disc-container computer-disc">
+        <!-- <div class="game-disc paper-color"><img src="./images/icon-paper.svg" alt="img"></div> -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- modal open btn -->
+  <button id="toggleModalBtn" onclick="toggleModal()">Rules</button>
+
+  <!-- modal container  -->
+  <div class="modal-container close-modal">
+    <div class="modal-content">
+      <p>RULES <span onclick="toggleModal()" class="fas fa-close"></span></p>
+      <img src="./images/image-rules.svg" alt="img">
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <div class="disc-container">
+        <img src="./images/icon-rock.svg" alt="img">
+
+      </div> -->

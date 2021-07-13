@@ -1,0 +1,19 @@
+@import "var";
+
+@mixin rockColor {
+  background: linear-gradient(hsl(349, 71%, 52%) 0%, hsl(349, 70%, 56%) 100%);
+  box-shadow: 0em 0.07em 0em 0em hsl(349, 55%, 35%), inset 0 0.05em 0 $gray,
+    inset -999px 0 0 $dark-white;
+}
+
+@mixin paperColor {
+  background: linear-gradient(hsl(230, 89%, 62%) 0%, hsl(230, 89%, 65%) 100%);
+  box-shadow: 0em 0.07em 0em 0em hsl(230, 48%, 41%), inset 0 0.05em 0 $gray,
+    inset -999px 0 0 $dark-white;
+}
+
+@mixin scissorsColor {
+  background: linear-gradient(hsl(39, 89%, 49%) 0%, hsl(40, 84%, 53%) 100%);
+  box-shadow: 0em 0.07em 0em 0em hsl(39, 85%, 32%), inset 0 0.05em 0 $gray,
+    inset -999px 0 0 $dark-white;
+}
